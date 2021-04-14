@@ -2,55 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>flexStudy</title>
+    <title>AutoMargin</title>
     <link  rel="stylesheet" href="../default/default.css">
     <style>
         .flex-container{
             display: flex;
-            flex-wrap: wrap;
+            width:600px;
+            /*margin:0 auto*/
+            margin-left: auto;
         }
         .flex-item{
-            flex: 1 1 auto
+            width: 150px;
         }
-        .flex-item:nth-child(1){
-            /*flex: 1;*/
-            /*flex: 0 1 20%*/
-            /*flex-grow: 1; flex-shrink: 1; flex-basis:0%*/
-            width:20%
-        }
-        .flex-item:nth-child(2){
-            /*flex: 3;*/
-            /*flex: 0 1 60%*/
-            /*flex-grow: 3; flex-shrink: 1; flex-basis:0%*/
-            width:60%
-        }
-        .flex-item:nth-child(3){
-            /*flex: 1;*/
-            /*flex: 0 1 20%*/
-            /*flex-grow: 1; flex-shrink: 1; flex-basis:0%*/
-            width:20%
-        }
-        .flex-item p {
-            /*white-space: nowrap;*/
+        .flex-item:last-child{
+            margin-left: auto;
         }
     </style>
 </head>
 <body>
     <div class="flex-container">
-        <div class="flex-item">
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-        </div>
-        <div class="flex-item">BBBBBBBBBB</div>
-        <div class="flex-item">CCCCCCCCCCCC</div>
-        <div class="flex-item">dddddddddd</div>
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
     </div>
 </body>
 </html>

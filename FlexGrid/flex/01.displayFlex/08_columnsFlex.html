@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>columns</title>
+    <link  rel="stylesheet" href="../default/default.css">
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            border: 10px solid red;
+        }
+        .flex-item{
+            flex: 1 auto;
+        }
+        @media (min-width: 600px){
+            .flex-container{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .flex-item{
+                width: 50%;
+                /*flex: 0 auto;*/
+                /*flex-basis: 50%;*/
+            }
+        }
+        @media(min-width: 900px){
+            .flex-item{
+                width: 30%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAA</div>
+        <div class="flex-item">BB</div>
+        <div class="flex-item">CCCCCCC</div>
+        <div class="flex-item">AAAAAAA</div>
+        <div class="flex-item">BB</div>
+        <div class="flex-item">CCCCCCC</div>
+        <div class="flex-item">AAAAAAA</div>
+        <div class="flex-item">BB</div>
+        <div class="flex-item">CCCCCCC</div>
+    </div>
+</body>
+</html>
