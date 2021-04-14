@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>order</title>
+    <link  rel="stylesheet" href="../default/default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            /*height: 100vh;*/
+            /*align-items: center*/
+        }
+        .flex-item:nth-child(1){
+            order: 3;
+        }
+        .flex-item:nth-child(2){
+            /*align-self: flex-start;*/
+            order: 2;
+            transform: scale(2)
+        }
+        .flex-item:nth-child(3){
+            order: 1;
+            transform: scale(2.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAA</div>
+        <div class="flex-item">BB</div>
+        <div class="flex-item">CCCCCCC</div>
+    </div>
+</body>
+</html>
