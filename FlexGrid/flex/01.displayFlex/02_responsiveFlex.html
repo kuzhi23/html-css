@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsiveFlex</title>
+    <link  rel="stylesheet" href="../default/default.css">
+    <style>
+        .flex-container{
+            display:flex;
+            flex-direction: column;
+        }
+        @media(min-width: 600px){
+            .flex-container{
+                flex-direction: row;
+            }
+            .flex-item{
+                flex:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCC</div>
+    </div>
+</body>
+</html>
