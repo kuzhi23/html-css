@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-grid-template-columns</title>
+    <link rel="stylesheet" href="../default/default.css">
+    <style>
+        .grid-container{
+            display: grid;
+            /*grid-template-columns: 300px 300px 300px;*/
+            grid-template-columns: repeat(3,1fr);
+            /*grid-template-columns: 1fr 2fr 1fr;*/
+            /*grid-template-columns: 1fr 500px 1fr;*/
+            /*fr: fraction;*/
+            /*grid-template-rows: 200px 200px 200px*/
+            /*grid-template-rows: repeat(2, 1fr);*/
+            height: 80vh
+        }
+        .grid-item{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>
