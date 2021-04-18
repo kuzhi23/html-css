@@ -3,7 +3,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .headerContainer {
@@ -168,7 +170,7 @@ body {
   box-sizing: border-box;
   width: 281.5px;
   height: 44px;
-  background: limegreen;
+  background: blue;
   align-items: center;
   padding-left: 16px;
   font-weight: bold;
